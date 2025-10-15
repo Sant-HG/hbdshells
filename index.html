@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+ 
+<title>TQM:33333 </title>
+  <style>
+     body {
+        background-color: black;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://wallpapers.com/images/hd/cats-in-space-xclt0gzpaqtnchy9.jpg");
+      background-size: cover;      /* La imagen cubre toda la pantalla */
+      background-position: center; /* Centrada */
+      background-repeat: no-repeat;/* No se repite */
+    }
+
+    
+
+    .girsprite {
+      width: 350px;
+      height: auto;
+      animation: jump 1.7s infinite ease-in-out;
+      position: absolute;
+      top: 300px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @keyframes jump {
+      0% { transform: translate(-50%, 0); }
+      50% { transform: translate(-50%, -40px); }
+      100% { transform: translate(-50%, 0); }
+    }
+
+    h1 {
+        margin-top: 100px;
+        margin-left: 500px;
+      font-size: 70px;
+      color: white;
+      text-shadow: 0 0 10px white, 0 0 20px white;
+      animation: glow 1.5s infinite ease-in-out;
+    }
+
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px rgb(175, 52, 182), 0 0 10px rgb(215, 14, 225); }
+      50% { text-shadow: 0 0 15px rgb(174, 12, 188), 0 0 30px rgb(201, 49, 168); }
+      100% { text-shadow: 0 0 5px rgb(125, 28, 132), 0 0 10px rgb(112, 9, 88); }
+    }
+  </style>
+</head>
+<body>
+     <canvas id="gameCanvas" width="800" height="500"></canvas>
+  <div class="container">
+    <!-- Puedes reemplazar esta URL por otro GIF si lo deseas -->
+    <img
+      class="girsprite"
+      src="https://th.bing.com/th/id/R.2b4238e2eea396048c868e3744fd9e05?rik=6%2f0H7F8Q6OAYcA&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fphotos%2f35900000%2fPinkie-Pie-my-little-pony-friendship-is-magic-35939133-1600-1141.png&ehk=0OfCD3c4D2Ys3kCQqcL6AJAUgYwAGy0eh5KM6%2fxtIgc%3d&risl=&pid=ImgRaw&r=0"
+      alt="GIR jumping"
+    />
+    <h1>Happy Birthday Shells</h1>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
